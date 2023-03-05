@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Amrita | Physiotherapist</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+               <img src="Images/img.jpeg" alt="">
+                
+            </div>
+            <div class="name">
+                <a href="#">Dr. Amrita Singh</a>
+            </div>
+            <div class="nav-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>MAGICAL REVOLUTION</h1>
+            <p>Expert Physiotherapist</p>
+            <a href="#contact" class="btn" >Book an Appointment</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.</p>
+                <p>Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor.</p>
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="container">
+                <h2>My Services</h2>
+                <div class="services-grid">
+                    <div class="service">
+                        <img src="Images/img3.gif" alt="Service 1">
+                        <h3>Service 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="service">
+                        <img src="Images/img4.gif" alt="Service 2">
+                        <h3>Service 2</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="service">
+                        <img src="Images/img5.gif" alt="Service 3">
+                        <h3>Service 3</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="service">
+                        <img src="Images/img7.png" alt="Service 4">
+                        <h3>Service 3</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="service">
+                        <img src="Images/img8.png" alt="Service 5">
+                        <h3>Service 3</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <div class="container">
+                <h2>Testimonials</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial">
+                        <img src="Images/img6.gif" alt="Person 1">
+                        <p>Lorem ipsum dolor sit amet
+
+         </section>   
+         
+         <div id="contact">
+            <h2>Contact Us</h2>
+            <form onsubmit="showConfirmation()" class="contact-form" method="post" action="#">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit" onclick="sendConfirmation()">Send Message</button>
+            </form>
+            <div id="confirmation" ></div>
+        </div>
+
+         <footer>
+          
+            <div>
+                  <h3>Contact Us</h3>
+                  <div1>
+                  <ul>
+                    <li>SAS HOUSE</li>
+                    <li>SAPRU MARG HAZARTGANJ LUCKNOW</li>
+                    </ul>
+               <ul>
+                    <li>DIRECTOR</li>
+                    <li>Phone: +91 7607065599</li>
+                    <li>Email: dgaurav300@gmail.com</li>
+                </ul>
+                  <ul>
+                    <li>CREATOR</li>
+                    <li>Phone: +91 9119807510</li>
+                    <li>Email: indian.princejaiswal@gmail.com</li>
+                  </ul>
+                </div1>
+                    <hr>
+                  <p>Copyright © [2023] [MAGICAL REVOLUTION]. All rights reserved.</p>
+                 <p> Unauthorized use and/or duplication of this material without express and written permission from this site’s author and/or owner is strictly prohibited. Excerpts and links may be used, provided that full and clear credit is given to MAGICAL REVOLUTION with appropriate and specific direction to the original content.</p>
+                </div>
+        
+          </footer>
+          
+       </main>
+       <script>
+		function showConfirmation() {
+			event.preventDefault(); //prevent form submission
+
+			let confirmationDiv = document.getElementById("confirmation");
+			confirmationDiv.innerHTML = "APPOINTMENT SCHEDULED ! &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp WE WILL GET BACK TO YOU SOON";
+		}
+	</script>
+       </body>
+       </html>
+                      
